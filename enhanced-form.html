@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enhanced Form and Media Page</title>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My Enhanced Web Page</h1>
+    <p>This page demonstrates semantic HTML, lists, tables, media, and a complete form with native validation.</p>
+  </header>
+
+  <section>
+    <h2>Features Overview (Lists)</h2>
+    <h3>Top Web Development Skills</h3>
+    <ul>
+      <li>HTML5 & Semantics</li>
+      <li>CSS3 & Responsive Design</li>
+      <li>JavaScript & Frameworks</li>
+      <li>Accessibility & UX</li>
+    </ul>
+
+    <h3>Steps to Build a Form</h3>
+    <ol>
+      <li>Plan your fields</li>
+      <li>Use semantic tags</li>
+      <li>Apply validation rules</li>
+      <li>Test for usability</li>
+    </ol>
+  </section>
+
+  <section>
+  <h2> Team Experience Overview</h2>
+  <p>The table below showcases key team members, their roles, and years of experience in their fields.</p>
+
+  <table border="1" cellpadding="10" cellspacing="0" width="100%">
+    <caption>Team Members and Their Experience</caption>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Role</th>
+        <th>Experience (Years)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Shalom</td>
+        <td>Frontend Developer</td>
+        <td>3</td>
+      </tr>
+      <tr><td colspan="3"><hr></td></tr>
+
+      <tr>
+        <td>Praise</td>
+        <td>Backend Developer</td>
+        <td>5</td>
+      </tr>
+      <tr><td colspan="3"><hr></td></tr>
+
+      <tr>
+        <td>Faith</td>
+        <td>UI/UX Designer</td>
+        <td>4</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+
+    <h2>Media Section</h2>
+    <p>Here’s an image and an audio clip included using HTML5:</p>
+
+    <img src="https://cdn.pixabay.com/photo/2020/06/09/18/11/box-write-in-it-5279529_1280.jpg" alt="Sample Placeholder Image" width="400">
+    <audio controls>
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+<section>
+    <section>
+  <h2>📝 Contact & Registration Form</h2>
+  
+  <form action="#" method="post" autocomplete="on">
+    
+    <!-- Personal Info -->
+    <fieldset>
+      <legend>Personal Information</legend>
+
+      <label for="fullname">Full Name *</label><br>
+      <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3"><br><br>
+
+      <label for="email">Email Address *</label><br>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required><br><br>
+
+      <label for="phone">Phone Number</label><br>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="e.g., 0712345678"><br><br>
+
+    
+    </fieldset>
+    <br>
+
+    <!-- Account Preferences -->
+    <fieldset>
+      <legend>Account Preferences</legend>
+
+      <label for="username">Username *</label><br>
+      <input type="text" id="username" name="username" required pattern="[A-Za-z0-9_]{5,}" title="Minimum 5 characters. Letters, numbers, and underscores only."><br><br>
+
+      <label for="password">Password *</label><br>
+      <input type="password" id="password" name="password" required minlength="6" placeholder="At least 6 characters"><br><br>
+
+      <label for="gender">Gender</label><br>
+      <select id="gender" name="gender">
+        <option value="">-- Select --</option>
+        <option value="female">Female</option>
+        <option value="male">Male</option>
+        <option value="nonbinary">Non-binary</option>
+      </select><br><br>
+
+    </fieldset>
+    <br>
+
+    <!-- Additional Info -->
+    <fieldset>
+      <legend>Additional Info</legend>
+
+      <label for="bio">Short Bio</label><br>
+      <textarea id="bio" name="bio" rows="3" placeholder="Tell us something about yourself..."></textarea><br><br>
+
+      <label for="refcode">Referral Code</label><br>
+      <input type="text" name="refcode" value="INVITED2025" readonly>
+    </fieldset>
+    <br>
+
+    <!-- Submit -->
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 My Enhanced Page. All rights reserved.</p>
+</footer>
